@@ -13,9 +13,11 @@
 		5F904C0B2077AF3F00C04E95 /* Ozkor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F904C092077AF3F00C04E95 /* Ozkor.xcdatamodeld */; };
 		5F904C0D2077AF3F00C04E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F904C0C2077AF3F00C04E95 /* Assets.xcassets */; };
 		5F904C102077AF3F00C04E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F904C0E2077AF3F00C04E95 /* LaunchScreen.storyboard */; };
+		AF86E543D683A1B0FE40DBC7 /* Pods_Ozkor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422E94279D94867F6A35AE0D /* Pods_Ozkor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		422E94279D94867F6A35AE0D /* Pods_Ozkor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ozkor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F904BFF2077AF3F00C04E95 /* Ozkor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ozkor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F904C022077AF3F00C04E95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F904C042077AF3F00C04E95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		5F904C0C2077AF3F00C04E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F904C0F2077AF3F00C04E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F904C112077AF3F00C04E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E19F856DD701779490CA16E /* Pods-Ozkor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozkor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ozkor/Pods-Ozkor.debug.xcconfig"; sourceTree = "<group>"; };
+		E2814BC05A4DEA588FFE72BE /* Pods-Ozkor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozkor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ozkor/Pods-Ozkor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF86E543D683A1B0FE40DBC7 /* Pods_Ozkor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C4A7DE16D70B9673BEBC7F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				422E94279D94867F6A35AE0D /* Pods_Ozkor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E6A41E4220634BE311842CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E19F856DD701779490CA16E /* Pods-Ozkor.debug.xcconfig */,
+				E2814BC05A4DEA588FFE72BE /* Pods-Ozkor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5F904BF62077AF3F00C04E95 = {
 			isa = PBXGroup;
 			children = (
 				5F904C012077AF3F00C04E95 /* Ozkor */,
 				5F904C002077AF3F00C04E95 /* Products */,
+				4E6A41E4220634BE311842CF /* Pods */,
+				3C4A7DE16D70B9673BEBC7F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +80,47 @@
 		5F904C012077AF3F00C04E95 /* Ozkor */ = {
 			isa = PBXGroup;
 			children = (
-				5F904C022077AF3F00C04E95 /* AppDelegate.swift */,
-				5F904C042077AF3F00C04E95 /* ViewController.swift */,
-				5F904C062077AF3F00C04E95 /* Main.storyboard */,
-				5F904C0C2077AF3F00C04E95 /* Assets.xcassets */,
-				5F904C0E2077AF3F00C04E95 /* LaunchScreen.storyboard */,
+				5F904C1A2077AF5100C04E95 /* Model */,
+				5F904C192077AF4E00C04E95 /* View */,
+				5F904C182077AF4B00C04E95 /* Controller */,
+				5F904C172077AF4600C04E95 /* Supporting Files */,
 				5F904C112077AF3F00C04E95 /* Info.plist */,
-				5F904C092077AF3F00C04E95 /* Ozkor.xcdatamodeld */,
 			);
 			path = Ozkor;
+			sourceTree = "<group>";
+		};
+		5F904C172077AF4600C04E95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F904C0C2077AF3F00C04E95 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F904C182077AF4B00C04E95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F904C022077AF3F00C04E95 /* AppDelegate.swift */,
+				5F904C042077AF3F00C04E95 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F904C192077AF4E00C04E95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F904C062077AF3F00C04E95 /* Main.storyboard */,
+				5F904C0E2077AF3F00C04E95 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F904C1A2077AF5100C04E95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F904C092077AF3F00C04E95 /* Ozkor.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F904C142077AF3F00C04E95 /* Build configuration list for PBXNativeTarget "Ozkor" */;
 			buildPhases = (
+				926B92163DF2D4243291E6C0 /* [CP] Check Pods Manifest.lock */,
 				5F904BFB2077AF3F00C04E95 /* Sources */,
 				5F904BFC2077AF3F00C04E95 /* Frameworks */,
 				5F904BFD2077AF3F00C04E95 /* Resources */,
+				F99065409DD28F02C9A54CB5 /* [CP] Embed Pods Frameworks */,
+				249F0AC6BA07546EA31B6554 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +192,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		249F0AC6BA07546EA31B6554 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ozkor/Pods-Ozkor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		926B92163DF2D4243291E6C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ozkor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F99065409DD28F02C9A54CB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ozkor/Pods-Ozkor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Canvas/Canvas.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Canvas.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ozkor/Pods-Ozkor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F904BFB2077AF3F00C04E95 /* Sources */ = {
@@ -276,6 +391,7 @@
 		};
 		5F904C152077AF3F00C04E95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E19F856DD701779490CA16E /* Pods-Ozkor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +407,7 @@
 		};
 		5F904C162077AF3F00C04E95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2814BC05A4DEA588FFE72BE /* Pods-Ozkor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

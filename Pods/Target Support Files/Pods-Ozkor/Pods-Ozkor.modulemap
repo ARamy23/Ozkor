@@ -1,0 +1,6 @@
+framework module Pods_Ozkor {
+  umbrella header "Pods-Ozkor-umbrella.h"
+
+  export *
+  module * { export * }
+}
