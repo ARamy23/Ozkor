@@ -1,15 +1,12 @@
 PODS:
   - Canvas (0.1.2)
-  - UICircularProgressRing (1.8.4)
 
 DEPENDENCIES:
   - Canvas
-  - UICircularProgressRing
 
 SPEC CHECKSUMS:
   Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
-  UICircularProgressRing: 653b31f7252b2959e8234f5b9ea5f925da755954
 
-PODFILE CHECKSUM: 01bb8d17d3d2a751d00eb2c7e577d023159df192
+PODFILE CHECKSUM: 90ed9c4da085caea2de2ac642ade08415d702988
 
 COCOAPODS: 1.4.0

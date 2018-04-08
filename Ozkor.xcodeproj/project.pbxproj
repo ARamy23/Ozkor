@@ -7,25 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F315B83207963BB004BFD2B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F315B82207963BB004BFD2B /* WelcomeViewController.swift */; };
 		5F904C032077AF3F00C04E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F904C022077AF3F00C04E95 /* AppDelegate.swift */; };
-		5F904C052077AF3F00C04E95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F904C042077AF3F00C04E95 /* ViewController.swift */; };
+		5F904C052077AF3F00C04E95 /* TasbeehAfterSalaaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F904C042077AF3F00C04E95 /* TasbeehAfterSalaaViewController.swift */; };
 		5F904C082077AF3F00C04E95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F904C062077AF3F00C04E95 /* Main.storyboard */; };
 		5F904C0B2077AF3F00C04E95 /* Ozkor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F904C092077AF3F00C04E95 /* Ozkor.xcdatamodeld */; };
 		5F904C0D2077AF3F00C04E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F904C0C2077AF3F00C04E95 /* Assets.xcassets */; };
 		5F904C102077AF3F00C04E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F904C0E2077AF3F00C04E95 /* LaunchScreen.storyboard */; };
+		5F9B7686207A66F7000A562B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9B7685207A66F7000A562B /* MenuViewController.swift */; };
+		5F9B7688207A68DE000A562B /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9B7687207A68DE000A562B /* CircularTransition.swift */; };
+		5FB43419207AA0670048E688 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB43417207AA0670048E688 /* MenuTableViewCell.swift */; };
+		5FB4341A207AA0670048E688 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB43418207AA0670048E688 /* MenuTableViewCell.xib */; };
 		AF86E543D683A1B0FE40DBC7 /* Pods_Ozkor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422E94279D94867F6A35AE0D /* Pods_Ozkor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		422E94279D94867F6A35AE0D /* Pods_Ozkor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ozkor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F315B82207963BB004BFD2B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5F904BFF2077AF3F00C04E95 /* Ozkor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ozkor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F904C022077AF3F00C04E95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F904C042077AF3F00C04E95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F904C042077AF3F00C04E95 /* TasbeehAfterSalaaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbeehAfterSalaaViewController.swift; sourceTree = "<group>"; };
 		5F904C072077AF3F00C04E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F904C0A2077AF3F00C04E95 /* Ozkor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ozkor.xcdatamodel; sourceTree = "<group>"; };
 		5F904C0C2077AF3F00C04E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F904C0F2077AF3F00C04E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F904C112077AF3F00C04E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9B7685207A66F7000A562B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		5F9B7687207A68DE000A562B /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		5FB43417207AA0670048E688 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		5FB43418207AA0670048E688 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		6E19F856DD701779490CA16E /* Pods-Ozkor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozkor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ozkor/Pods-Ozkor.debug.xcconfig"; sourceTree = "<group>"; };
 		E2814BC05A4DEA588FFE72BE /* Pods-Ozkor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozkor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ozkor/Pods-Ozkor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				5F904C022077AF3F00C04E95 /* AppDelegate.swift */,
-				5F904C042077AF3F00C04E95 /* ViewController.swift */,
+				5F315B82207963BB004BFD2B /* WelcomeViewController.swift */,
+				5F9B7685207A66F7000A562B /* MenuViewController.swift */,
+				5F904C042077AF3F00C04E95 /* TasbeehAfterSalaaViewController.swift */,
+				5F9B7687207A68DE000A562B /* CircularTransition.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -109,6 +122,7 @@
 		5F904C192077AF4E00C04E95 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5FB43416207AA02F0048E688 /* Menu Tableview Cells */,
 				5F904C062077AF3F00C04E95 /* Main.storyboard */,
 				5F904C0E2077AF3F00C04E95 /* LaunchScreen.storyboard */,
 			);
@@ -121,6 +135,15 @@
 				5F904C092077AF3F00C04E95 /* Ozkor.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5FB43416207AA02F0048E688 /* Menu Tableview Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5FB43417207AA0670048E688 /* MenuTableViewCell.swift */,
+				5FB43418207AA0670048E688 /* MenuTableViewCell.xib */,
+			);
+			path = "Menu Tableview Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +210,7 @@
 			files = (
 				5F904C102077AF3F00C04E95 /* LaunchScreen.storyboard in Resources */,
 				5F904C0D2077AF3F00C04E95 /* Assets.xcassets in Resources */,
+				5FB4341A207AA0670048E688 /* MenuTableViewCell.xib in Resources */,
 				5F904C082077AF3F00C04E95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,12 +259,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ozkor/Pods-Ozkor-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Canvas/Canvas.framework",
-				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Canvas.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -255,7 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F904C0B2077AF3F00C04E95 /* Ozkor.xcdatamodeld in Sources */,
-				5F904C052077AF3F00C04E95 /* ViewController.swift in Sources */,
+				5F9B7688207A68DE000A562B /* CircularTransition.swift in Sources */,
+				5FB43419207AA0670048E688 /* MenuTableViewCell.swift in Sources */,
+				5F9B7686207A66F7000A562B /* MenuViewController.swift in Sources */,
+				5F315B83207963BB004BFD2B /* WelcomeViewController.swift in Sources */,
+				5F904C052077AF3F00C04E95 /* TasbeehAfterSalaaViewController.swift in Sources */,
 				5F904C032077AF3F00C04E95 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
