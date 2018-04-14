@@ -1,12 +1,18 @@
 PODS:
+  - BubbleTransition (2.0.2)
   - Canvas (0.1.2)
+  - JTMaterialTransition (2.0.1)
 
 DEPENDENCIES:
+  - BubbleTransition
   - Canvas
+  - JTMaterialTransition
 
 SPEC CHECKSUMS:
+  BubbleTransition: 7d98ed7d56f0940e83f350a98103ad473491c769
   Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  JTMaterialTransition: 2350b44b404d1982a7ba755866cc65da452f4eec
 
-PODFILE CHECKSUM: 90ed9c4da085caea2de2ac642ade08415d702988
+PODFILE CHECKSUM: c6b6bb0f451eb6be9daf3feda2f48bc11d902661
 
 COCOAPODS: 1.4.0

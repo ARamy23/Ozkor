@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JTMaterialTransition
 
 struct MenuItemModel
 {
@@ -22,7 +23,7 @@ class MenuViewController: UIViewController
     var menuModel: [MenuItemModel] = []
     let menuItem1 : MenuItemModel = MenuItemModel(imageViewString: "prayer-beads", cellBackgroundColor: UIColor.rgb(r: 0, g: 252, b: 108))
     let menuItem2 : MenuItemModel = MenuItemModel(imageViewString: "islamic-friday-prayer", cellBackgroundColor: UIColor.rgb(r: 40, g: 36, b: 58))
-    
+    var transition: JTMaterialTransition?
     
     override func viewDidLoad()
     {
@@ -31,6 +32,13 @@ class MenuViewController: UIViewController
         // Do any additional setup after loading the view.
         customizeUI()
         initMenuTableView()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! TasbeehAfterSalaaViewController
+        destination.modalPresentationStyle = .custom
+        destination.transitioningDelegate = self.transition
+        
     }
     
     fileprivate func initMenuTableView()
@@ -48,7 +56,7 @@ class MenuViewController: UIViewController
     
     @IBAction func dismissMenu(_ sender: Any)
     {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.dismiss(animated: true, completion: nil)
     }
 }
 
@@ -60,8 +68,11 @@ extension MenuViewController : UITableViewDelegate , UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
+        
         let cell = menuTableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell") as! MenuTableViewCell
+        self.transition = JTMaterialTransition(animatedView: cell.cellView)
         cell.setModel(model: menuModel[indexPath.row])
+        
         return cell
     }
     
@@ -79,6 +90,8 @@ extension MenuViewController : UITableViewDelegate , UITableViewDataSource
             break
         default:
             //GoTo Tasbeeh After Salaa
+            
+            
             self.performSegue(withIdentifier: "goToTasbeehAfterSalaa", sender: self)
             break
         }

@@ -54,7 +54,7 @@ class TasbeehAfterSalaaViewController: UIViewController
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-      view.backgroundColor = UIColor.backgroundColor
+        view.backgroundColor = UIColor.backgroundColor
         initShapes()
         customizeUI()
         animateBackground()

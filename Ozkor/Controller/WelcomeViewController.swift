@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import BubbleTransition
 
 class WelcomeViewController: UIViewController, UIViewControllerTransitioningDelegate
 {
     @IBOutlet weak var menuButton: UIButton!
     
-    let transition = CircularTransition()
+    let transition = BubbleTransition()
     
     override func viewDidLoad()
     {
@@ -31,12 +32,19 @@ class WelcomeViewController: UIViewController, UIViewControllerTransitioningDele
         let destination = segue.destination as! MenuViewController
         destination.transitioningDelegate = self
         destination.modalPresentationStyle = .custom
+        
+    }
+    
+    
+    @IBAction func didTapMenuButton(_ sender: Any)
+    {
+        performSegue(withIdentifier: "goToMenu", sender: self)
     }
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.transitionMode = .present
         transition.startingPoint = menuButton.center
-        transition.circleColor = menuButton.backgroundColor!
+        transition.bubbleColor = menuButton.backgroundColor!
         
         return transition
     }
@@ -44,7 +52,7 @@ class WelcomeViewController: UIViewController, UIViewControllerTransitioningDele
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.transitionMode = .dismiss
         transition.startingPoint = menuButton.center
-        transition.circleColor = menuButton.backgroundColor!
+        transition.bubbleColor = menuButton.backgroundColor!
         
         return transition
     }

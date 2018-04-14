@@ -7,4 +7,6 @@ target 'Ozkor' do
 
   # Pods for Ozkor
 pod 'Canvas'
+pod 'BubbleTransition'
+pod 'JTMaterialTransition'
 end

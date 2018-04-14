@@ -34,7 +34,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zPx-8B-NJe" kind="show" id="j72-yk-oOH"/>
+                                    <action selector="didTapMenuButton:" destination="SRJ-O0-bgh" eventType="touchUpInside" id="SVS-pp-fwU"/>
+                                    <segue destination="zPx-8B-NJe" kind="show" identifier="goToMenu" id="kXV-gd-nI3"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oum-Vb-FZd" customClass="CSAnimationView" customModule="Ozkor" customModuleProvider="target">
@@ -91,9 +92,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IEc-Kf-9xH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="703.20000000000005" y="321.58920539730138"/>
+            <point key="canvasLocation" x="2287.1999999999998" y="321.58920539730138"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Menu-->
         <scene sceneID="yCi-eE-GkL">
             <objects>
                 <viewController id="zPx-8B-NJe" customClass="MenuViewController" customModule="Ozkor" customModuleProvider="target" sceneMemberID="viewController">
@@ -187,6 +188,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="33p-s9-m8E"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Menu" id="JBJ-z0-Sq2">
+                        <barButtonItem key="backBarButtonItem" title="Menu" id="kTx-ZV-3X0"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="dismissButton" destination="E8V-8G-4Al" id="Eem-EX-Rer"/>
                         <outlet property="menuTableView" destination="nZF-dS-G2K" id="hbW-4O-aY1"/>
@@ -195,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lIs-eN-pkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1552.8" y="321.58920539730138"/>
+            <point key="canvasLocation" x="3431.1999999999998" y="321.58920539730138"/>
         </scene>
         <!--Tasbeeh After Salaa View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -261,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2534" y="774"/>
+            <point key="canvasLocation" x="4476" y="743.47826086956525"/>
         </scene>
     </scenes>
     <resources>

@@ -1,8 +1,10 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Canvas"
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BubbleTransition" "${PODS_CONFIGURATION_BUILD_DIR}/Canvas" "${PODS_CONFIGURATION_BUILD_DIR}/JTMaterialTransition"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Canvas/Canvas.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Canvas"
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/BubbleTransition/BubbleTransition.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Canvas/Canvas.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/JTMaterialTransition/JTMaterialTransition.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "BubbleTransition" -framework "Canvas" -framework "JTMaterialTransition"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
